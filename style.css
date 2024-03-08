@@ -25,9 +25,9 @@ body {
     text-align:center;
     margin: auto;
     display: block;
-    width: 250px;
+    width: 200px;
     background-image: url(images/balance.PNG);
-    background-size: 100% auto;
+    background-size: 100% 100%;
     padding: 10px;
     padding-left: 50px;
     font-size: 35px;
