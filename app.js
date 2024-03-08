@@ -4,7 +4,7 @@ tg.expand();
 
 let clameButton = document.getElementById("clame-button");
 clameButton.addEventListener("click", () => {
-    print("ffdfgf");
+    alert("ffdfgf");
     tg.sandData(JSON.stringify("fdfffdf"));
     tg.close();
 });
