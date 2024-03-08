@@ -1,0 +1,55 @@
+body {
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+}
+
+.container {
+    max-width: 390px;
+    background-image: url(images/background.PNG);
+    background-size: 100%;
+    text-align: center;
+    color: white;
+}
+
+.header {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.main {
+    margin-top: 40px;
+}
+
+.balance {
+    text-align:center;
+    margin: auto;
+    display: block;
+    width: 60%;
+    height: 40px;
+    background-image: url(images/balance.PNG);
+    background-size: 100%;
+    padding: 10px;
+    padding-left: 50px;
+    font-size: 35px;
+    color: rgb(0, 147, 245);
+}
+
+.coin {
+    position: absolute;
+    margin-left: -40px;
+    width: 40px;
+    height: 40px;
+}
+
+.clame-button {
+    margin: auto;
+    display: block;
+    width: 70%;
+    margin-top: 25px;
+}
+
+.ref-link-button {
+    width: 90%;
+    margin-bottom: 10px;
+}
