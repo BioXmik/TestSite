@@ -4,7 +4,6 @@ tg.expand();
 
 let clameButton = document.getElementById("clame-button");
 clameButton.addEventListener("click", () => {
-    const data = { first_name, last_name, username } = tg.initDataUnsafe.user;
-    tg.sandData(JSON.stringify(data));
+    tg.sandData(JSON.stringify("fdfffdf"));
     tg.close();
 });
