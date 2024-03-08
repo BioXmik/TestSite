@@ -5,6 +5,5 @@ tg.expand();
 let clameButton = document.getElementById("clame-button");
 clameButton.addEventListener("click", () => {
     alert("ffdfgf");
-    tg.sandData(JSON.stringify("fdfffdf"));
     tg.close();
 });
