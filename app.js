@@ -2,10 +2,11 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-let userId = 880668193;
+let userId = tg.initDataUnsafe.user.id;
 
 let clameButton = document.getElementById("clame-button");
 let balanceText = document.getElementById("balance-text");
+let refLinkText = document.getElementById("ref-link-text");
 let refLinkCopyButton = document.getElementById("ref-link-copy-button");
 
 getBalance(userId);
