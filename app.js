@@ -13,6 +13,11 @@ let refLinkCopyButton = document.getElementById("ref-link-copy-button");
 
 refLinkText.textContent = refLink;
 fetch(`http://localhost:5000/auth/${userId}`)
+    .then(response => response.text())
+    alert(response.split()[1])
+    .catch(error => {
+        // Handle error
+    });
 getBalance(userId);
 
 function getBalance(userId) {
