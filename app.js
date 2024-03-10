@@ -44,7 +44,6 @@ function getRefCount(userId) {
     fetch(`http://localhost:5000/ref-count/${userId}`)
         .then(response => response.text())
         .then(refCount => {
-            alert(refCount);
             refCountText.textContent = refCount;
         })
         .catch(error => {
