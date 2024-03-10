@@ -4,13 +4,14 @@ tg.expand();
 
 let botName = "tapcoin_bot";
 let userId = tg.initDataUnsafe.user.id;
+let refLink = `https://t.me/${botName}?start=${userId}`;
 
 let clameButton = document.getElementById("clame-button");
 let balanceText = document.getElementById("balance-text");
 let refLinkText = document.getElementById("ref-link-text");
 let refLinkCopyButton = document.getElementById("ref-link-copy-button");
 
-refLinkText.textContent = `https://t.me/${botName}?start=${userId}`;
+refLinkText.textContent = refLink;
 getBalance(userId);
 
 function getBalance(userId) {
@@ -50,5 +51,5 @@ clameButton.addEventListener("click", () => {
 });
 
 refLinkCopyButton.addEventListener("click", () => {
-    copyToClipboard(userId);
+    copyToClipboard(refLink);
 });
