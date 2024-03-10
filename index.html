@@ -15,15 +15,25 @@
             <div class="main">
                 <div>BALANCE</div>
                 <div class="balance">
-                    <img class="coin" src="images/coin.PNG" id="balance-text"/>
-                    999999999999
+                    <img class="coin" src="images/coin.PNG"/>
+                    <span id="balance-text">0</span>
                 </div>
                 <input class="clame-button" type="image" src="images/clame_button.PNG" id="clame-button"/>
                 REFERAL LINK
-                <input class="ref-link-button" type="image" src="images/referal_panel.PNG"/>
+                <div class="ref-link-panel">
+                    <div class="ref-link-text"></div>
+                    <img class="ref-link-copy" src="images/copy.PNG" id="ref-link-copy-button"/>
+                    <div class="ref-count-text">
+                        35355
+                    </div>
+                    <div class="ref-balance-text">
+                        35355
+                    </div>
+                </div>
             </div>
         </div>  
     </body>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
 </html>

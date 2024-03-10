@@ -1,6 +1,17 @@
+@font-face {
+	font-family: 'Days'; 
+	src: url("./fonts/days/days.ttf"); 
+}
+
+@font-face {
+	font-family: 'Bicubik'; 
+	src: url("./fonts/bicubik/bicubik.ttf"); 
+}
+
 body {
     color: var(--tg-theme-text-color);
     background: var(--tg-theme-bg-color);
+    font-family: 'Bicubik'; 
 }
 
 .container {
@@ -31,7 +42,8 @@ body {
     padding: 10px;
     padding-left: 50px;
     font-size: 35px;
-    color: rgb(0, 147, 245);
+    font-family: 'Days';
+    color: rgb(108,223,233);
 }
 
 .coin {
@@ -48,7 +60,46 @@ body {
     margin-top: 25px;
 }
 
-.ref-link-button {
+.ref-link-panel {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1px 15px 1px 25px;
     width: 90%;
+    height: 125px;
     margin-bottom: 10px;
+    background-image: url(images/referal_panel.PNG);
+    background-size: 100% 100%;
+    font-family: 'Days';
+}
+
+.ref-link-copy {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.ref-link-text {
+    flex-grow: 0.75;
+    width: 70%;
+    height: 30px;
+    margin: 10px;
+    word-wrap: break-word;
+    font-size: 13px;
+}
+
+.ref-count-text {
+    flex-grow: 1;
+    height: 30px;
+    margin: 10px;
+    word-wrap: break-word;
+    font-size: 25px;
+}
+
+.ref-balance-text {
+    flex-grow: 1.15;
+    height: 30px;
+    margin: 10px;
+    word-wrap: break-word;
+    font-size: 25px;
 }
