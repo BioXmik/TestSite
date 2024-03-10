@@ -2,6 +2,7 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
+let botName = "tapcoin_bot";
 let userId = tg.initDataUnsafe.user.id;
 
 let clameButton = document.getElementById("clame-button");
@@ -9,6 +10,7 @@ let balanceText = document.getElementById("balance-text");
 let refLinkText = document.getElementById("ref-link-text");
 let refLinkCopyButton = document.getElementById("ref-link-copy-button");
 
+refLinkText.textContent = `https://t.me/${botName}?start=${userId}`;
 getBalance(userId);
 
 function getBalance(userId) {
