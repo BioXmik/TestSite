@@ -15,14 +15,8 @@ let refLinkCopyButton = document.getElementById("ref-link-copy-button");
 
 refLinkText.textContent = refLink;
 fetch(`http://localhost:5000/auth/${userId}`)
-    .then(function(response) { return response.json(); })
-    .then(function(json) {
-        refBalancekText.textContent = response.balance;
-    })
-    .catch(error => {
-        // Handle error
-    });
 getBalance(userId);
+getRefCount(userId);
 
 function getBalance(userId) {
     fetch(`http://localhost:5000/balance/${userId}`)
@@ -40,6 +34,17 @@ function clame(userId) {
         .then(response => response.text())
         .then(balance => {
             balanceText.textContent = balance;
+        })
+        .catch(error => {
+            // Handle error
+    });
+}
+
+function getRefCount(userId) {
+    fetch(`http://localhost:5000/ref-count/${userId}`)
+        .then(response => response.text())
+        .then(refCount => {
+            refCountText.textContent = refCount;
         })
         .catch(error => {
             // Handle error
