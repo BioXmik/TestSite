@@ -12,6 +12,7 @@ let refLinkText = document.getElementById("ref-link-text");
 let refLinkCopyButton = document.getElementById("ref-link-copy-button");
 
 refLinkText.textContent = refLink;
+fetch(`http://localhost:5000/auth/${userId}`)
 getBalance(userId);
 
 function getBalance(userId) {
