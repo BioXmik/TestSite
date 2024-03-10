@@ -9,12 +9,16 @@ let refLink = `https://t.me/${botName}?start=${userId}`;
 let clameButton = document.getElementById("clame-button");
 let balanceText = document.getElementById("balance-text");
 let refLinkText = document.getElementById("ref-link-text");
+let refCountText = document.getElementById("ref-count-text");
+let refBalancekText = document.getElementById("ref-balance-text");
 let refLinkCopyButton = document.getElementById("ref-link-copy-button");
 
 refLinkText.textContent = refLink;
 fetch(`http://localhost:5000/auth/${userId}`)
-    .then(response => response.text())
-    alert(response.split()[1])
+    .then(function(response) { return response.json(); })
+    .then(function(json) {
+        refBalancekText.textContent = response.balance;
+    })
     .catch(error => {
         // Handle error
     });
