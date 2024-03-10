@@ -15,8 +15,8 @@ let refLinkCopyButton = document.getElementById("ref-link-copy-button");
 
 refLinkText.textContent = refLink;
 fetch(`http://localhost:5000/auth/${userId}`)
-getBalance(userId);
-getRefCount(userId);
+//getBalance(userId);
+//getRefCount(userId);
 
 function getBalance(userId) {
     fetch(`http://localhost:5000/balance/${userId}`)
