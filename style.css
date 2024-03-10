@@ -64,9 +64,9 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 1px 15px 1px 25px;
+    padding: 0px 20px 0px 20px;
     width: 90%;
-    height: 125px;
+    height: 140px;
     margin-bottom: 10px;
     background-image: url(images/referal_panel.PNG);
     background-size: 100% 100%;
@@ -74,14 +74,15 @@ body {
 }
 
 .ref-link-copy {
+    flex-grow: 1;
     width: 30px;
     height: 30px;
     margin: 10px;
 }
 
 .ref-link-text {
-    flex-grow: 0.75;
-    width: 70%;
+    flex-grow: 1;
+    width: 80%;
     height: 30px;
     margin: 10px;
     word-wrap: break-word;
@@ -89,7 +90,7 @@ body {
 }
 
 .ref-count-text {
-    flex-grow: 2;
+    flex-grow: 1;
     height: 25%;
     margin: 10px;
     word-wrap: break-word;
@@ -97,7 +98,7 @@ body {
 }
 
 .ref-balance-text {
-    flex-grow: 2.15;
+    flex-grow: 1.15;
     height: 25%;
     margin: 10px;
     word-wrap: break-word;
