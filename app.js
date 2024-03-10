@@ -2,7 +2,7 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-let botName = "tapcoin_bot";
+let botName = "test3423462_bot";
 let userId = tg.initDataUnsafe.user.id;
 let refLink = `https://t.me/${botName}?start=${userId}`;
 
