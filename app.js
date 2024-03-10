@@ -3,7 +3,7 @@ let tg = window.Telegram.WebApp;
 tg.expand();
 
 let botName = "tapcoin_bot";
-let userId = tg.initDataUnsafe.user.username;
+let userId = tg.initDataUnsafe.user.id;
 
 let clameButton = document.getElementById("clame-button");
 let balanceText = document.getElementById("balance-text");
