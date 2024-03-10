@@ -90,7 +90,7 @@ body {
 
 .ref-count-text {
     flex-grow: 1;
-    height: 30px;
+    height: 25%;
     margin: 10px;
     word-wrap: break-word;
     font-size: 25px;
@@ -98,7 +98,7 @@ body {
 
 .ref-balance-text {
     flex-grow: 1.15;
-    height: 30px;
+    height: 25%;
     margin: 10px;
     word-wrap: break-word;
     font-size: 25px;
