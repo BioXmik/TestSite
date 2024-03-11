@@ -15,12 +15,12 @@ let refBalanceText = document.getElementById("ref-balance-text");
 let refLinkCopyButton = document.getElementById("ref-link-copy-button");
 
 refLinkText.textContent = refLink;
-fetch(`http://${dbUrl}/auth/${userId}`)
+fetch(`https://${dbUrl}/auth/${userId}`)
 getBalance(userId);
 getRefCount(userId);
 
 function getBalance(userId) {
-    fetch(`http://${dbUrl}/balance/${userId}`)
+    fetch(`https://${dbUrl}/balance/${userId}`)
         .then(response => response.text())
         .then(balance => {
             balanceText.textContent = balance;
@@ -31,7 +31,7 @@ function getBalance(userId) {
 }
 
 function clame(userId) {
-    fetch(`http://${dbUrl}/clame/${userId}`)
+    fetch(`https://${dbUrl}/clame/${userId}`)
         .then(response => response.text())
         .then(balance => {
             balanceText.textContent = balance;
@@ -42,7 +42,7 @@ function clame(userId) {
 }
 
 function getRefCount(userId) {
-    fetch(`http://${dbUrl}/ref-count/${userId}`)
+    fetch(`https://${dbUrl}/ref-count/${userId}`)
         .then(response => response.text())
         .then(refCount => {
             refCountText.textContent = refCount;
@@ -53,7 +53,7 @@ function getRefCount(userId) {
 }
 
 function getRefBalance(userId) {
-    fetch(`http://${dbUrl}/ref-balance/${userId}`)
+    fetch(`https://${dbUrl}/ref-balance/${userId}`)
         .then(response => response.text())
         .then(refBalance => {
             refBalanceText.textContent = refBalance;
