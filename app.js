@@ -10,7 +10,7 @@ let clameButton = document.getElementById("clame-button");
 let balanceText = document.getElementById("balance-text");
 let refLinkText = document.getElementById("ref-link-text");
 let refCountText = document.getElementById("ref-count-text");
-let refBalancekText = document.getElementById("ref-balance-text");
+let refBalanceText = document.getElementById("ref-balance-text");
 let refLinkCopyButton = document.getElementById("ref-link-copy-button");
 
 refLinkText.textContent = refLink;
@@ -45,6 +45,17 @@ function getRefCount(userId) {
         .then(response => response.text())
         .then(refCount => {
             refCountText.textContent = refCount;
+        })
+        .catch(error => {
+            // Handle error
+    });
+}
+
+function getRefBalance(userId) {
+    fetch(`http://localhost:5000/ref-balance/${userId}`)
+        .then(response => response.text())
+        .then(refBalance => {
+            refBalanceText.textContent = refBalance;
         })
         .catch(error => {
             // Handle error
