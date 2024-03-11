@@ -64,8 +64,7 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 0px 20px 0px 20px;
-    width: 90%;
+    width: 80%;
     height: 140px;
     margin-bottom: 10px;
     background-image: url(images/referal_panel.PNG);
@@ -77,14 +76,15 @@ body {
     flex-grow: 1;
     width: 30px;
     height: 30px;
-    margin: 10px;
+    margin: 15px 25px 15px 5px;
 }
 
 .ref-link-text {
     flex-grow: 1;
-    width: 80%;
+    width: 70%;
     height: 30px;
-    margin: 10px;
+    margin: 15px 0px 15px 15px;
+    padding: 0px 0px 0px 15px;
     word-wrap: break-word;
     font-size: 13px;
 }
