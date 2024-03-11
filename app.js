@@ -2,6 +2,7 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
+const dbUrl = "5.35.88.102:44444"
 let botName = "test3423462_bot";
 let userId = tg.initDataUnsafe.user.id;
 let refLink = `https://t.me/${botName}?start=${userId}`;
@@ -14,12 +15,12 @@ let refBalanceText = document.getElementById("ref-balance-text");
 let refLinkCopyButton = document.getElementById("ref-link-copy-button");
 
 refLinkText.textContent = refLink;
-fetch(`http://localhost:5000/auth/${userId}`)
+fetch(`http://${dbUrl}/auth/${userId}`)
 getBalance(userId);
 getRefCount(userId);
 
 function getBalance(userId) {
-    fetch(`http://localhost:5000/balance/${userId}`)
+    fetch(`http://${dbUrl}/balance/${userId}`)
         .then(response => response.text())
         .then(balance => {
             balanceText.textContent = balance;
@@ -30,7 +31,7 @@ function getBalance(userId) {
 }
 
 function clame(userId) {
-    fetch(`http://localhost:5000/clame/${userId}`)
+    fetch(`http://${dbUrl}/clame/${userId}`)
         .then(response => response.text())
         .then(balance => {
             balanceText.textContent = balance;
@@ -41,7 +42,7 @@ function clame(userId) {
 }
 
 function getRefCount(userId) {
-    fetch(`http://localhost:5000/ref-count/${userId}`)
+    fetch(`http://${dbUrl}/ref-count/${userId}`)
         .then(response => response.text())
         .then(refCount => {
             refCountText.textContent = refCount;
@@ -52,7 +53,7 @@ function getRefCount(userId) {
 }
 
 function getRefBalance(userId) {
-    fetch(`http://localhost:5000/ref-balance/${userId}`)
+    fetch(`http://${dbUrl}/ref-balance/${userId}`)
         .then(response => response.text())
         .then(refBalance => {
             refBalanceText.textContent = refBalance;
