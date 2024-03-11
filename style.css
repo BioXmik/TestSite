@@ -76,17 +76,17 @@ body {
     flex-grow: 1;
     width: 30px;
     height: 30px;
-    margin: 15px 25px 15px 5px;
+    margin: 15px 25px 15px 8px;
 }
 
 .ref-link-text {
     flex-grow: 1;
-    width: 70%;
+    width: 65%;
     height: 30px;
     margin: 15px 0px 15px 15px;
-    padding: 0px 0px 0px 15px;
+    padding: 0px 10px 0px 20px;
     word-wrap: break-word;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .ref-count-text {
