@@ -2,7 +2,7 @@ let tg = window.Telegram.WebApp;
 
 tg.expand();
 
-const dbUrl = "5.35.88.102:44444"
+const dbUrl = "5.35.87.100:44444"
 let botName = "test3423462_bot";
 let userId = tg.initDataUnsafe.user.id;
 let refLink = `https://t.me/${botName}?start=${userId}`;
